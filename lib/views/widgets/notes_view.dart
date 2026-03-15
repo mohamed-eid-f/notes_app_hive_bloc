@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import "package:notes_app_hive_bloc/views/widgets/fab.dart";
 import "package:notes_app_hive_bloc/views/widgets/notes_view_body.dart";
 
 class NotesView extends StatelessWidget {
@@ -6,6 +7,6 @@ class NotesView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: NotesViewBody());
+    return Scaffold(floatingActionButton: Fab(), body: NotesViewBody());
   }
 }
